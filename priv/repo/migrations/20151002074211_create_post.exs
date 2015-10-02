@@ -4,7 +4,7 @@ defmodule BlogPhoenix.Repo.Migrations.CreatePost do
   def change do
     create table(:posts) do
       add :title, :string
-      add :bode, :text
+      add :body, :text
 
       timestamps
     end

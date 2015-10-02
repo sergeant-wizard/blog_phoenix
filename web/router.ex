@@ -1,10 +1,6 @@
 defmodule BlogPhoenix.Router do
   use BlogPhoenix.Web, :router
 
-  resources "/posts", PostController do
-    post "/comment", PostController, :add_comment
-  end
-
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
@@ -21,6 +17,9 @@ defmodule BlogPhoenix.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/posts", PostController do
+      post "/comment", PostController, :add_comment
+    end
   end
 
   # Other scopes may use custom stacks.

@@ -4,14 +4,14 @@ defmodule BlogPhoenix.Post do
 
   schema "posts" do
     field :title, :string
-    field :bode, :string
+    field :body, :string
 
     has_many :comments, BlogPhoenix.Comment
 
     timestamps
   end
 
-  @required_fields ~w(title bode)
+  @required_fields ~w(title body)
   @optional_fields ~w()
 
   @doc """

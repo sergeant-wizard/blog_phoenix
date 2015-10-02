@@ -16,8 +16,8 @@
   </div>
 
   <div class="form-group">
-    <%= label f, :bode, "Bode", class: "control-label" %>
-    <%= textarea f, :bode, class: "form-control" %>
+    <%= label f, :body, "body", class: "control-label" %>
+    <%= textarea f, :body, class: "form-control" %>
   </div>
 
   <div class="form-group">

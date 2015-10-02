@@ -2,7 +2,7 @@ defmodule BlogPhoenix.PostControllerTest do
   use BlogPhoenix.ConnCase
 
   alias BlogPhoenix.Post
-  @valid_attrs %{bode: "some content", title: "some content"}
+  @valid_attrs %{body: "some content", title: "some content"}
   @invalid_attrs %{}
 
   setup do

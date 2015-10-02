@@ -8,8 +8,8 @@
   </li>
 
   <li>
-    <strong>Bode:</strong>
-    <%= @post.bode %>
+    <strong>body:</strong>
+    <%= @post.body %>
   </li>
 
 </ul>
