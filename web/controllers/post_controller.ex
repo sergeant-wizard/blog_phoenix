@@ -2,6 +2,7 @@ defmodule BlogPhoenix.PostController do
   use BlogPhoenix.Web, :controller
 
   alias BlogPhoenix.Post
+  alias BlogPhoenix.Comment
 
   plug :scrub_params, "post" when action in [:create, :update]
 
