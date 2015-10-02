@@ -10,10 +10,10 @@
     </tr>
   </thead>
   <tbody>
-<%= for post <- @posts do %>
+<%= for {post, count} <- @posts do %>
     <tr>
       <td><%= post.title %></td>
-      <td><%= post.bode %></td>
+      <td><%= count %></td>
 
       <td class="text-right">
         <%= link "Show", to: post_path(@conn, :show, post), class: "btn btn-default btn-xs" %>
