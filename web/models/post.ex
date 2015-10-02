@@ -5,6 +5,8 @@ defmodule BlogPhoenix.Post do
     field :title, :string
     field :bode, :string
 
+    has_many :comments, BlogPhoenix.Comment
+
     timestamps
   end
 
